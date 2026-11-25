@@ -1,0 +1,15 @@
+name: HavocEvent
+version: 1.0.0
+main: id.havoc.event.HavocEvent
+api-version: '1.21'
+author: Havoc
+description: Countdown announcement and configurable expanding world border.
+commands:
+  hv:
+    description: Manage the Havoc event.
+    usage: /hv <start|reload>
+    permission: havocevent.admin
+permissions:
+  havocevent.admin:
+    description: Allows starting and reloading HavocEvent.
+    default: op

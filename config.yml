@@ -1,0 +1,47 @@
+# HavocEvent configuration
+
+countdown:
+  enabled: true
+  # Seconds between each countdown number.
+  interval: 1.0
+  numbers: [3, 2, 1]
+  title:
+    # Supports legacy color codes (&6, &l, etc.). Use {number} for the current number.
+    title: "&c&l{number}"
+    subtitle: "&fGet ready..."
+    fade-in: 0
+    stay: 20
+    fade-out: 0
+  sound:
+    enabled: true
+    three: "BLOCK_NOTE_BLOCK_HAT"
+    two: "BLOCK_NOTE_BLOCK_HAT"
+    one: "BLOCK_NOTE_BLOCK_BELL"
+    # Used for countdown values other than 3, 2, or 1.
+    other: "BLOCK_NOTE_BLOCK_HAT"
+    volume: 1.0
+    pitch: 1.0
+
+announcement:
+  title: "&6&lHAVOC EVENT"
+  subtitle: "&fTHE EVENT HAS STARTED!"
+  fade-in: 10
+  stay: 60
+  fade-out: 20
+  sound:
+    enabled: true
+    type: "UI_TOAST_CHALLENGE_COMPLETE"
+    volume: 1.0
+    pitch: 1.0
+
+worldborder:
+  enabled: true
+  world: "world"
+  center-x: 0.0
+  center-z: 0.0
+  start-size: 100.0
+  end-size: 1000.0
+  # Total expansion duration in seconds.
+  duration: 300
+  # Border size is updated this often. 1 = every second.
+  interval: 1
